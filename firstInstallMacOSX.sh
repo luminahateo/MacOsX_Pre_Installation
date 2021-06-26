@@ -5,7 +5,7 @@
 
 #PreInstall
 #MiseAJourDuSysteme
-softwareupdate -ia --restart
+softwareupdate -ia #--restart
 
 #InstallBrew
 /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
@@ -45,4 +45,4 @@ echo "Logiciel_brew Audio Video OK" >> .suivisInstall.txt
 brew install --cask openmw minecraft minecraft-server sauerbraten gog-galaxy
 echo "Logiciel_brew Jeux OK" >> .suivisInstall.txt
 
-cat .suivisInstall.txt
+clear && cat .suivisInstall.txt && rm .suivisInstall.txt
